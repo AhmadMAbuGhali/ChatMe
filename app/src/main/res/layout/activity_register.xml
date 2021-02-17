@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"
+        android:text="Enter Your Phone Number "
+        android:textAlignment="center"
+        android:textColor="@color/mainColor"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Chat Me will send to you an SMS to verify your phone number."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/layout_for_cpp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        >
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:gravity="center"
+            app:ccp_areaCodeDetectedCountry="true"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_autoDetectLanguage="true"
+            app:ccp_padding="@dimen/ccp_padding"
+            app:ccp_showFlag="true"
+            app:ccpDialog_showTitle="true"
+            app:ccp_showFullName="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <EditText
+                    android:id="@+id/phone_nu"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:inputType="number"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carrier text messaging fees may apply to you"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="15sp"
+                />
+
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/sendNumber"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="250dp"
+            android:backgroundTint="@color/mainColor"
+            android:text="Next"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
