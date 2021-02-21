@@ -12,38 +12,69 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/_54sdp"
+        android:layout_marginTop="@dimen/_23sdp"
         android:text="Check "
         android:textColor="@color/mainColor"
-        android:textSize="19sp"
+        android:textSize="@dimen/_14sdp"
         android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_11sdp"
         android:gravity="center_horizontal"
         android:text="Waiting for automatic detection of a text message sent to"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="19sp"
+        android:textSize="@dimen/_14sdp"
         android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="@dimen/_38sdp"
         android:orientation="horizontal">
 
        <EditText
-           android:id="@+id/CodeText"
-           android:layout_width="150dp"
+           android:id="@+id/codeText1"
+           android:layout_width="@dimen/_15sdp"
            android:layout_height="wrap_content"
            android:inputType="number"
+
+           /> <EditText
+           android:id="@+id/codeText2"
+           android:layout_width="@dimen/_15sdp"
+           android:layout_height="wrap_content"
+           android:inputType="number"
+
+           /> <EditText
+           android:id="@+id/codeText3"
+           android:layout_width="@dimen/_15sdp"
+           android:layout_height="wrap_content"
+           android:inputType="number"
+
+           /> <EditText
+           android:id="@+id/codeText4"
+           android:layout_width="@dimen/_15sdp"
+           android:layout_height="wrap_content"
+           android:inputType="number"
+
+           /> <EditText
+           android:id="@+id/codeText5"
+           android:layout_width="@dimen/_15sdp"
+           android:layout_height="wrap_content"
+           android:inputType="number"
+
+           /> <EditText
+           android:id="@+id/codeText6"
+           android:layout_width="@dimen/_15sdp"
+           android:layout_height="wrap_content"
+           android:inputType="number"
+
            />
     </LinearLayout>
 
@@ -51,7 +82,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="140dp"
+        android:layout_marginLeft="@dimen/_107sdp"
         android:text="Enter the 6-digit code"
         android:textStyle="bold"
 
@@ -60,31 +91,33 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_38sdp"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="9dp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_6sdp"
             android:src="@drawable/ic_baseline_textsms_24" />
 
         <TextView
+            android:id="@+id/sendAgine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="@dimen/_11sdp"
             android:text="Send the message again" />
 
         <com.dhims.timerview.TimerTextView
-            android:id="@+id/timerText"
+            android:id="@+id/msgTimerText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:drawablePadding="4dp"
+            android:drawablePadding="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_70sdp"
             android:gravity="center"
-            android:textSize="24sp" />
+            android:textSize="@dimen/_18sdp" />
 
     </LinearLayout>
 
@@ -95,32 +128,43 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_3sdp"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="9dp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_6sdp"
             android:src="@drawable/ic_baseline_call_24" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="@dimen/_11sdp"
             android:text="Call me " />
 
         <com.dhims.timerview.TimerTextView
-            android:id="@+id/timercall"
+            android:id="@+id/callTimerText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:drawablePadding="4dp"
+            android:drawablePadding="@dimen/_3sdp"
             android:gravity="center"
-            android:textSize="24sp" />
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginLeft="@dimen/_170sdp"/>
+
 
     </LinearLayout>
-
+    <Button
+        android:id="@+id/verifyCode"
+        android:layout_width="@dimen/_115sdp"
+        android:layout_height="@dimen/_46sdp"
+        android:layout_marginLeft="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_122sdp"
+        android:backgroundTint="@color/mainColor"
+        android:text="Next"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold" />
 </LinearLayout>

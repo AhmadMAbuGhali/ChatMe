@@ -13,22 +13,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginLeft="@dimen/_46sdp"
+        android:layout_marginTop="@dimen/_54sdp"
         android:gravity="center_horizontal"
         android:text="Enter Your Phone Number "
         android:textAlignment="center"
         android:textColor="@color/mainColor"
-        android:textSize="24sp"
+        android:textSize="@dimen/_18sdp"
         android:textStyle="bold" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Chat Me will send to you an SMS to verify your phone number."
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="@dimen/_15sdp"
         android:textStyle="bold"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="@dimen/_38sdp"
         android:textAlignment="center"
         android:gravity="center_horizontal" />
 
@@ -36,7 +36,7 @@
         android:id="@+id/layout_for_cpp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="@dimen/_77sdp"
         android:orientation="vertical"
         >
 
@@ -44,7 +44,7 @@
             android:id="@+id/ccp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="110dp"
+            android:layout_marginLeft="@dimen/_84sdp"
             android:gravity="center"
             app:ccp_areaCodeDetectedCountry="true"
             app:ccp_autoDetectCountry="true"
@@ -69,11 +69,13 @@
 
                 <EditText
                     android:id="@+id/phone_nu"
-                    android:layout_width="200dp"
+                    android:layout_width="@dimen/_153sdp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="100dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="@dimen/_77sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
                     android:inputType="number"
+                    android:background="@null"
+                    android:importantForAutofill="no"
                     />
             </LinearLayout>
 
@@ -83,23 +85,25 @@
                 android:text="Carrier text messaging fees may apply to you"
                 android:textAlignment="center"
                 android:gravity="center_horizontal"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="15sp"
+                android:layout_marginLeft="@dimen/_46sdp"
+                android:layout_marginTop="@dimen/_11sdp"
                 />
 
 
 
         </LinearLayout>
+
         <Button
             android:id="@+id/sendNumber"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="250dp"
+            android:layout_width="@dimen/_115sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_122sdp"
             android:backgroundTint="@color/mainColor"
             android:text="Next"
-            android:textSize="16dp"
+            android:textSize="@dimen/_12sdp"
             android:textStyle="bold" />
     </LinearLayout>
+
 
 </LinearLayout>

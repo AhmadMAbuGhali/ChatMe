@@ -10,16 +10,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginLeft="@dimen/_54sdp"
+        android:layout_marginTop="@dimen/_38sdp"
         android:text="Welcome to Chat Me"
         android:textColor="@color/mainColor"
-        android:textSize="30sp"
+        android:textSize="@dimen/_23sdp"
         android:textStyle="bold" />
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_246sdp"
         android:src="@drawable/term" />
 
     <TextView
@@ -28,9 +28,9 @@
         android:gravity="center_horizontal"
         android:text='Read the privacy policy. Click "Agree and Continue" to accept the terms of service'
         android:textAlignment="center"
-        android:textSize="18sp"
+        android:textSize="@dimen/_13sdp"
         android:textColor="@color/black"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/_23sdp"
         android:textStyle="bold"
         />
 
@@ -39,8 +39,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Agree and Continue"
-        android:layout_marginTop="70dp"
-        android:layout_marginLeft="110dp"
+        android:layout_marginTop="@dimen/_54sdp"
+        android:layout_marginLeft="@dimen/_84sdp"
         android:backgroundTint="@color/mainColor"
         />
 

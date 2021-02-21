@@ -17,15 +17,15 @@
         android:text="welcome wo Chat Me"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:textSize="24sp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="120dp"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginLeft="@dimen/_61sdp"
+        android:layout_marginTop="@dimen/_92sdp"
         />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-200dp"
+        android:layout_marginBottom="@dimen/_153sdp"
         android:src="@drawable/logo" />
 
 </LinearLayout>
